@@ -1,5 +1,6 @@
 package slices
 
+// StringIn is to check whether a string element is in a slice
 func StringIn(ss []string, s string) bool {
 	for _, find := range ss {
 		if find == s {
