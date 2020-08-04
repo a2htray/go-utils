@@ -23,3 +23,15 @@ func TestStringForeach(t *testing.T) {
 		fmt.Println(s)
 	})
 }
+
+func TestStringUnique(t *testing.T) {
+	ss := []string{"1", "2", "2"}
+	fmt.Println(StringUnique(ss))
+}
+
+func TestStringExtend(t *testing.T) {
+	ss := []string{"1", "2", "2"}
+	s1 := []string{"4"}
+	s2 := []string{"5"}
+	fmt.Println(StringExtend(ss, s1, s2))
+}

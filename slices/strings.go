@@ -25,4 +25,25 @@ func StringForeach(ss []string, cb func(s string)) {
 	}
 }
 
+// StringUnique
+func StringUnique(ss []string) []string {
+	m := map[string]bool{}
+	for _, s := range ss {
+		m[s] = true
+	}
+	ret := make([]string, 0, len(m))
+	for k := range m {
+		ret = append(ret, k)
+	}
+	return ret
+}
+
+// StringExtend
+func StringExtend(ss []string, extends... []string) []string {
+	ret := ss
+	for _, extend := range extends {
+		ret = append(ret, extend...)
+	}
+	return ret
+}
 
