@@ -16,3 +16,10 @@ func TestStrMap(t *testing.T) {
 		return s + "@"
 	}))
 }
+
+func TestStringForeach(t *testing.T) {
+	ss := []string{"1", "2", "3"}
+	StringForeach(ss, func(s string) {
+		fmt.Println(s)
+	})
+}
