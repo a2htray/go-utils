@@ -47,7 +47,7 @@ StringIn([]string{"1", "2", "3"}, "3")
 ```go
 ss := []string{"1", "2", "3"}
 
-fmt.Println(StringMap(ss, func(s string) interface{} {
+fmt.Println(StringMap(ss, func(s string) string {
     return s + "@"
 }))
 ```

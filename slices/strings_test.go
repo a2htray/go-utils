@@ -12,7 +12,7 @@ func TestStrIn(t *testing.T) {
 func TestStrMap(t *testing.T) {
 	ss := []string{"1", "2", "3"}
 
-	fmt.Println(StringMap(ss, func(s string) interface{} {
+	fmt.Println(StringMap(ss, func(s string) string {
 		return s + "@"
 	}))
 }

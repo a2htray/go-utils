@@ -11,8 +11,8 @@ func StringIn(ss []string, s string) bool {
 }
 
 // StringMap ...
-func StringMap(ss []string, cb func(s string) interface{}) []interface{} {
-	ret := make([]interface{}, 0, len(ss))
+func StringMap(ss []string, cb func(s string) string) string {
+	ret := make([]string, 0, len(ss))
 	for _, s := range ss {
 		ret = append(ret, cb(s))
 	}
