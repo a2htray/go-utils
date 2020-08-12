@@ -1,4 +1,6 @@
-### go utils collection
+### go utils collection [![Build Status](https://travis-ci.com/a2htray/go-utils.svg?branch=master)](https://travis-ci.com/a2htray/go-utils)
+
+
 
 this package contains a set of generally useful function for common development
 
