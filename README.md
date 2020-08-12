@@ -12,7 +12,7 @@ this package contains a set of generally useful function for common development
 lines, err := files.ReadAllLines("/filesystem/a.txt")
 ```
 
-`Reomve`
+`Remove`
 
 ```go
 err := files.Remove("/filesystem/a.txt")
