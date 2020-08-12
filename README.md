@@ -1,4 +1,4 @@
-### go utils collection [![Build Status](https://travis-ci.com/a2htray/go-utils.svg?branch=master)](https://travis-ci.com/a2htray/go-utils)
+### go utils collection [Build Status](https://travis-ci.com/a2htray/go-utils.svg?branch=master)
 
 
 
@@ -12,7 +12,7 @@ this package contains a set of generally useful function for common development
 lines, err := files.ReadAllLines("/filesystem/a.txt")
 ```
 
-`Reomve`
+`Remove`
 
 ```go
 err := files.Remove("/filesystem/a.txt")
