@@ -11,3 +11,7 @@ func TestReSplit(t *testing.T) {
 		fmt.Println(v)
 	}
 }
+
+func main() {
+
+}

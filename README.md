@@ -18,6 +18,37 @@ err := files.Remove("/filesystem/a.txt")
 err := files.Remove("/filesystem/a.txt", "/filesystem/b.txt")
 ```
 
+`Extention`
+
+```go
+Extension("\\file\\a.txt") // txt
+```
+
+`ExtentionWithDot`
+
+```go
+ExtensionWithDot("\\file\\a.txt") // .txt
+```
+
+#### pretty
+
+`Print`
+
+```go
+type V struct {
+    A int `json:"a"`
+    B string `json:"b"`
+}
+a := []interface{}{V{
+    A: 1,
+    B: "a",
+}}
+Print(a...)
+
+b := []interface{}{1, 2, 3}
+Print(b...)
+```
+
 #### slices
 
 `InterfaceForeach`

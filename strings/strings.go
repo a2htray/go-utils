@@ -8,4 +8,3 @@ func RegexSplit(s string, pattern string, n int) []string {
 	reg := regexp.MustCompile(pattern)
 	return reg.Split(s, n)
 }
-

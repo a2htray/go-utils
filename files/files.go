@@ -3,6 +3,7 @@ package files
 import (
 	"bufio"
 	"os"
+	"path/filepath"
 )
 
 // ReadAllLines is to read all lines from a given file path
@@ -33,4 +34,17 @@ func Remove(paths... string) error {
 		}
 	}
 	return nil
+}
+
+// Extension returns the filename extension without dot
+func Extension(filename string) string {
+	ext := ExtensionWithDot(filename)
+	if len(ext) != 0 {
+		return ext[1:]
+	}
+	return ""
+}
+
+func ExtensionWithDot(filename string) string {
+	return filepath.Ext(filename)
 }
