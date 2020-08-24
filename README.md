@@ -120,3 +120,37 @@ for _, v := range RegexSplit(s, `[@.#]+`, -1)  {
     fmt.Println(v)
 }
 ```
+
+#### vectors
+
+`Add`
+
+```go
+ret := Add([]float64{1, 2, 3}, []float64{1, 2, 3})
+```
+
+`Sub`
+
+```go
+ret := Sub([]float64{1, 2, 3}, []float64{1, 2, 3})
+```
+
+`Multiply`
+
+```go
+ret := Multiply([]float64{1, 2, 3}, 1)
+```
+
+`Divide`
+
+```go
+Divide([]float64{1, 2, 3}, 1)
+```
+
+`Dot`
+
+```go
+ret := Dot([]float64{1, 2, 3}, []float64{1, 2, 3})
+```
+
+

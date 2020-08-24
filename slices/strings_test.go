@@ -6,7 +6,11 @@ import (
 )
 
 func TestStrIn(t *testing.T) {
-	fmt.Println(StringIn([]string{"1", "2", "3"}, "3"))
+	b := StringIn([]string{"1", "2", "3"}, "3")
+
+	if !b {
+		t.Fatal("error")
+	}
 }
 
 func TestStrMap(t *testing.T) {
